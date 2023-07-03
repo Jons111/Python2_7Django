@@ -13,6 +13,11 @@ def studentlar_sahifa(malumot):
     talabalar = Student.objects.all()
     return render(malumot, 'studentlar.html',{"studentlar":talabalar})
 
+
+
+
+
+
 def delete_student(malumot,id):
     Student.objects.get(id=id).delete()
     talabalar = Student.objects.all()
